@@ -7,12 +7,17 @@
     "type": "git",
     "url": "git://github.com/kaleb/js-math.git"
   },
+  "scripts": {
+    "build": "coffee -M -c math.coffee",
+    "prepare": "npm run build"
+  },
   "main": "math.js",
   "engines": {
     "node": "> 0.0.0"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "coffeescript": "^2.7.0"
+  },
   "homepage": "kaleb.hornsby.ws/js-math",
   "contributors": [
     "Kaleb Hornsby <kaleb@hornsby.ws> (kaleb.hornsby.ws)"

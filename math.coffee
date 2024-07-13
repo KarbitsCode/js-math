@@ -63,7 +63,7 @@ Math.mul = (a, b) -> a * b
  * Math.prod(2, 3, 4)
  * //-> 24
  ###
-Math.prod = (nums) -> nums.reduce Math.mul
+Math.prod = (nums...) -> nums.reduce Math.mul
 
 ###*
  * @return {Number} factorial of a Number.
